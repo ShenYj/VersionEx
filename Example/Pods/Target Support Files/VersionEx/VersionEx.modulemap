@@ -1,0 +1,6 @@
+framework module VersionEx {
+  umbrella header "VersionEx-umbrella.h"
+
+  export *
+  module * { export * }
+}
