@@ -25,17 +25,56 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="htR-SX-98i">
+                                <rect key="frame" x="36" y="123.5" width="303" height="81.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6k-PF-6uY">
+                                        <rect key="frame" x="131" y="0.0" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzC-0u-NM8">
+                                        <rect key="frame" x="131" y="30.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw8-PP-dCq">
+                                        <rect key="frame" x="131" y="61" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rL8-Fk-LGm">
+                                <rect key="frame" x="36" y="245" width="303" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rL8-Fk-LGm" firstAttribute="top" secondItem="htR-SX-98i" secondAttribute="bottom" constant="40" id="4IQ-vr-xUX"/>
                             <constraint firstItem="Z28-gg-1Ey" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="4lP-2p-axX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z28-gg-1Ey" secondAttribute="trailing" constant="20" id="90P-eO-3oV"/>
+                            <constraint firstItem="htR-SX-98i" firstAttribute="top" secondItem="Z28-gg-1Ey" secondAttribute="bottom" constant="20" id="J4e-7L-sPK"/>
                             <constraint firstItem="Z28-gg-1Ey" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="PvT-cz-uZ3"/>
+                            <constraint firstItem="htR-SX-98i" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="QSx-mg-B2k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rL8-Fk-LGm" secondAttribute="trailing" constant="20" id="gBg-Gb-dxm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="htR-SX-98i" secondAttribute="trailing" constant="20" id="gz3-Br-CTO"/>
+                            <constraint firstItem="rL8-Fk-LGm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="hM1-YX-zL6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Version" id="XOg-5z-nGu"/>
                     <connections>
+                        <outlet property="compareResultLabel" destination="rL8-Fk-LGm" id="4u1-Zw-pyG"/>
                         <outlet property="versionLabel" destination="Z28-gg-1Ey" id="ad6-fv-phb"/>
+                        <outletCollection property="subVersionLabels" destination="K6k-PF-6uY" collectionClass="NSMutableArray" id="Nx0-K9-32n"/>
+                        <outletCollection property="subVersionLabels" destination="xzC-0u-NM8" collectionClass="NSMutableArray" id="0Dh-hF-Rmp"/>
+                        <outletCollection property="subVersionLabels" destination="dw8-PP-dCq" collectionClass="NSMutableArray" id="Oot-RL-6n3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
