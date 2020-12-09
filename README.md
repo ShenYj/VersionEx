@@ -4,6 +4,9 @@
 [![Version](https://img.shields.io/cocoapods/v/VersionEx.svg?style=flat)](https://cocoapods.org/pods/VersionEx)
 [![License](https://img.shields.io/cocoapods/l/VersionEx.svg?style=flat)](https://cocoapods.org/pods/VersionEx)
 [![Platform](https://img.shields.io/cocoapods/p/VersionEx.svg?style=flat)](https://cocoapods.org/pods/VersionEx)
+![Swift version](https://img.shields.io/badge/swift-5.1-orange.svg)
+![Swift version](https://img.shields.io/badge/swift-5.2-orange.svg)
+![Swift version](https://img.shields.io/badge/swift-5.3-orange.svg)
 
 ## Example
 
