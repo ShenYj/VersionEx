@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         subVersionLabels[2].text = "修订版本: \(Version.vx.patch ?? "-")"
         // 版本比对结果
         let targetVersion = "1.1"
-        let result = Version.vx[targetVersion] ? "低": "不低于"
+        let result = Version.vx[targetVersion] ? "低于": "不低于"
         compareResultLabel.text = "当前版本[\(Version.vx.version)] \(result) [\(targetVersion)]版本 "
     }
 
