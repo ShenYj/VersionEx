@@ -21,12 +21,18 @@ public struct Version {
     
     // MARK: 属性
     
+    // 主版本号
     public private(set) var major: String?
+    // 次版本号
     public private(set) var minor: String?
+    // 修订版本号
     public private(set) var patch: String?
     
     // MARK: 下标
     
+    // 当前版本是否低于目标版本
+    // 返回值 -> true  代表低于目标版本
+    // 返回值 -> false 代表不低于目标版本
     public subscript(_ targetVersion: String) -> Bool { lower(targetVersion) }
     
 }
