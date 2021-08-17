@@ -1,11 +1,11 @@
 PODS:
-  - Nimble (8.0.9)
+  - Nimble (9.0.1)
   - Quick (2.2.1)
-  - VersionEx (0.1.0)
+  - VersionEx (1.0.1)
 
 DEPENDENCIES:
-  - Nimble (~> 8.0.7)
-  - Quick (~> 2.2.0)
+  - Nimble (~> 9.0.0)
+  - Quick
   - VersionEx (from `../`)
 
 SPEC REPOS:
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
+  Nimble: 7bed62ffabd6dbfe05f5925cbc43722533248990
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
-  VersionEx: 98f7992fcf782f1ca8c2fa5a5211201c351fc78a
+  VersionEx: e93abe3d184098fe7a568a0cef3586a6af5352bc
 
-PODFILE CHECKSUM: 104420f1531614da2e7893d6bffcf43a3026ff31
+PODFILE CHECKSUM: 680d7bb07923d4a7b6d9048d046fb9be10d8dca6
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.2

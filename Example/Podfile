@@ -8,7 +8,7 @@ target 'VersionEx_Example' do
   target 'VersionEx_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 2.2.0'
-    pod 'Nimble', '~> 8.0.7'
+    pod 'Quick'
+    pod 'Nimble', '~> 9.0.0'
   end
 end
